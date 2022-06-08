@@ -1,0 +1,158 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal
+}
+
+ul {
+    list-style: none
+}
+
+button,
+input,
+select {
+    margin: 0
+}
+
+html {
+    box-sizing: border-box
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit
+}
+
+img,
+video {
+    height: auto;
+    max-width: 100%
+}
+
+iframe {
+    border: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td,
+th {
+    padding: 0
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 120vh;
+    background-color: #322F3D;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.pricing {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #322F3D;
+}
+
+@media screen and (max-width: 768px) {
+    .pricing {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .table {
+        /* margin: 40px 40px; */
+        width: 75%;
+    }
+    .selection {
+        font-size: medium;
+    }
+}
+
+
+/*fbb472*/
+
+.table {
+    margin: 20px 20px;
+}
+
+.table .contenu {
+    background-color: #ddd;
+    text-align: center;
+    padding: 10px 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.contenu h6 {
+    color: #a61e2c;
+}
+
+.table .photo {
+    height: 25vh;
+    background-color: #fbb472;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.selection {
+    border: 1px solid #fbb472;
+    width: 80%;
+    font-size: 1em;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.selection:hover {
+    color: #a61e2c;
+    border: 1px solid #a61e2c;
+}
+
+.resolution {
+    margin-top: 40px;
+    background-color: #322F3D;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
