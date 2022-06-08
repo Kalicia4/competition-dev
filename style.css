@@ -1,24 +1,55 @@
+.section1{
+    width: 100vw;
+    height: 100%;
+    background-image: url('bg/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
 body{
-    padding: 0;
-    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;  
+    overflow-x: hidden;
 }
-header{
-    position: relative;   
+.container{
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: y mandatory;
+    display: flex; 
 }
-img{
+
+/*navigation*/
+.navigation{
+    position: relative;
+    height: 60px;
+    width: 100%;
+    border-bottom: #a61e2c solid 1px;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 0.4s 2s ease-out forwards;
+}
+@keyframes apparition {
+    100%{
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.navigation img{
+    width: 50px;
     position: absolute;
-    width: 48px;
-    left: 25px;
-    top: ;
+    top: 5px;
+    left: 20px;
 }
 nav{
     position: absolute;
     text-align: center;
-    padding-bottom: 15px;
     top: 0;
     padding-top: 10px;
     width: 100%;
-    border-bottom: #a61e2c solid 1px;
 }
 nav a{
     margin: 3%;
@@ -42,3 +73,154 @@ nav a:hover::before{
     transform-origin: 0 0;
     transform: scaleX(1);
 }
+
+
+/*titre*/
+.titre{
+    position: relative;
+   display: block;
+   margin-top: 50px;
+    opacity: 0;
+    transform: translateY(-30px);
+    animation: apparition 1s ease-out forwards;
+
+
+}
+.titre h1{
+   position: absolute;
+   left: 10%;
+   right: 50%;
+    font-size: 10rem;
+    -webkit-text-stroke: #a61e2c 2px;
+    color: transparent;
+    margin: 0%;
+}
+
+/*PUB*/
+.pub{
+    background-color:  transparent;
+    position: absolute;
+    padding-top: 75px;
+    width: 75%;
+    height: 35%;
+    top: 45%;
+    left: 10%;
+    text-align: center;
+    z-index: 2;
+    border: white solid 10px;
+    opacity: 0;
+    animation: apparitionPub 1s 0.5s   ease-out forwards;
+}
+@keyframes apparitionPub {
+    100%{
+        opacity: 1;
+    }
+}
+
+/*boutton*/
+.boutton{
+    position: absolute;
+    top: 15%;
+    left: 80%;
+    display: inline-block;
+    background-color: black;
+    border-radius: 15px;
+    text-decoration: none;
+    opacity: 0;
+    animation: apparitionPub 1s 1s   ease-out forwards;
+}
+.boutton span{
+    display: inline-block;
+    background-color: #a61e2c;
+    color: white;
+    border: 1px solid #a61e2c;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 
+    transform 0.15s ease-out,
+    color 0.15s ease-out,
+    background-color 0.15s ease-out;
+}
+.boutton:hover span{
+    transform: translate(-6px, -6px);
+    color: black;
+    background-color: white ;
+}
+
+/*style soratra @ sisiny */
+.box1{
+    display: inline;
+    position: absolute;
+    top: 40%;
+    left: -20px;
+    transform: translateX(-50px);
+    animation: apparition 0.4s 1s ease-out forwards;
+
+}
+.box1 h3{
+    writing-mode: vertical-lr;
+    font-size: 2em;
+    background-color: white;
+}
+.box2{
+    display: inline;
+    position: absolute;
+    top: 60%;
+    left: -20px;
+    transform: translateX(-50px);
+    animation: apparition 0.4s 1.25s ease-out forwards;
+
+}
+.box2 h3{
+    writing-mode: vertical-lr;
+    font-size: 2em;
+    background-color: white;
+}.box3{
+    display: inline;
+    position: absolute;
+    top: 40%;
+    left: 92%;
+    transform: translateX(100px);
+    animation: apparition 0.4s 1.5s ease-out forwards;
+
+}
+.box3 h3{
+    writing-mode: vertical-lr;
+    font-size: 2em;
+    background-color: white;
+}.box4{
+    display: inline;
+    position: absolute;
+    top: 70%;
+    left: 92%;
+    padding: 0;
+    transform: translateX(100px);
+    animation: apparition 0.4s 1.75s ease-out forwards;
+
+}
+.box4 h3{
+    writing-mode: vertical-lr;
+    font-size: 2em;
+    background-color: white;
+}
+@media screen and (max-width: 900px){
+    .titre h1{
+        font-size: 150px;
+        padding: 2%;
+    }
+    .boutton{
+        left: 40%;
+        top: 44%;
+        z-index: 4;
+    }
+    .box1, .box2, .box3, .box4{
+        display: none;
+    }
+}
+ 
+
+
+
