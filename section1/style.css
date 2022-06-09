@@ -14,12 +14,13 @@ body{
     margin: 0;  
     overflow-x: hidden;
 }
-.container{
+.izy-rehetra{
     width: 100%;
     height: 100%;
     scroll-snap-type: y mandatory;
-    display: flex; 
+    display: block;
 }
+
 
 /*navigation*/
 .navigation{
@@ -161,6 +162,7 @@ nav a:hover::before{
 
 }
 .box1 h3{
+    padding: 5px;
     writing-mode: vertical-lr;
     font-size: 2em;
     background-color: white;
@@ -175,6 +177,7 @@ nav a:hover::before{
 
 }
 .box2 h3{
+    padding: 5px;
     writing-mode: vertical-lr;
     font-size: 2em;
     background-color: white;
@@ -188,6 +191,7 @@ nav a:hover::before{
 
 }
 .box3 h3{
+    padding: 5px;
     writing-mode: vertical-lr;
     font-size: 2em;
     background-color: white;
@@ -202,6 +206,7 @@ nav a:hover::before{
 
 }
 .box4 h3{
+    padding: 5px;
     writing-mode: vertical-lr;
     font-size: 2em;
     background-color: white;
