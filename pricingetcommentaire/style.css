@@ -22,7 +22,7 @@ h4,
 h5,
 h6 {
     margin: 0;
-    padding: 0
+    padding: 0;
 }
 
 h1,
@@ -49,9 +49,9 @@ html {
     box-sizing: border-box
 }
 
-*,
-*::before,
-*::after {
+
+.section2::before,
+.section2::after {
     box-sizing: inherit
 }
 
@@ -75,23 +75,27 @@ th {
     padding: 0
 }
 
-* {
+.section2 *{
     box-sizing: border-box;
 }
 
-body {
+.section2{
+    width: 100%;
     height: 120vh;
-    background-color: #322F3D;
+    background-color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
 }
 
 .pricing {
+    margin-top: 2px;
+    margin-bottom: 2px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: #322F3D;
+    background-color: #a61e2c;
 }
 
 @media screen and (max-width: 768px) {
@@ -116,7 +120,8 @@ body {
 }
 
 .table .contenu {
-    background-color: #ddd;
+    background-color: transparent;
+    border: #ddd solid 5px;
     text-align: center;
     padding: 10px 10px;
     border-bottom-left-radius: 8px;
@@ -125,17 +130,20 @@ body {
 
 .contenu h6 {
     color: #a61e2c;
+    
 }
 
 .table .photo {
     height: 25vh;
-    background-color: #fbb472;
+    background-color: black;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
 
+
 .selection {
-    border: 1px solid #fbb472;
+    border: 1px solid #ddd;
+    border-radius: 10px;
     width: 80%;
     font-size: 1em;
     padding-top: 5px;
@@ -148,7 +156,6 @@ body {
 }
 
 .resolution {
-    margin-top: 40px;
     background-color: #322F3D;
     border-radius: 8px;
     -webkit-border-radius: 8px;

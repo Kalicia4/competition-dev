@@ -1,9 +1,9 @@
 <?php 
-require_once 'class/Message.php';
-require_once 'class/GeustBook.php';
+require_once 'Message.php';
+require_once 'GeustBook.php';
 $errors = null;
 $succes = false;
-$GeustBook = new GeustBook(__DIR__ . DIRECTORY_SEPARATOR . 'data/messages');
+$GeustBook = new GeustBook(__DIR__ . DIRECTORY_SEPARATOR . 'messages');
 if(isset($_POST['username']) && isset($_POST['message'])){
     $Message = new Message($_POST['message'],$_POST['username']);
     if( $Message->isvalid()){
